@@ -33,3 +33,19 @@ function factorial(x) {
 }
 let d = factorial(4)
 console.log(d)
+
+function fibonacci(x) {
+    let previousNumber = 0
+    let currentNumber = 1
+    let result = 0
+    let fibTotal = 0
+    for (let count = 3; count <= x; count ++) {
+        result = add(previousNumber, currentNumber)
+        previousNumber = currentNumber
+        currentNumber = result
+        fibTotal = result
+    }
+    return fibTotal
+}
+let e = fibonacci(10)
+console.log(e)
